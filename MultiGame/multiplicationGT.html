@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Multiplication Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="multiplicationGT.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <button id="begin" class="float">BEGIN</button>
+    <table id="tb1" class="float marginLeft">
+      <tr class="display" id="tr1">
+        <td id="s1"></td>
+        <td>X</td>
+        <td id="s2"></td>
+        <td><input id="blank1" type="number" /></td>
+        <td><button id="enter1">Enter</button></td>
+      </tr>
+
+      <tr class="display" id="tr2">
+        <td id="s3"></td>
+        <td>X</td>
+        <td id="s4"></td>
+        <td><input id="blank2" type="number" /></td>
+        <td><button id="enter2">Enter</button></td>
+      </tr>
+      <tr class="display" id="tr3">
+        <td id="s5"></td>
+        <td>X</td>
+        <td id="s6"></td>
+        <td><input id="blank3" type="number" /></td>
+        <td><button id="enter3">Enter</button></td>
+      </tr>
+      <tr class="display" id="tr4">
+        <td id="s7"></td>
+        <td>X</td>
+        <td id="s8"></td>
+        <td><input id="blank4" type="number" /></td>
+        <td><button id="enter4">Enter</button></td>
+      </tr>
+      <tr class="display" id="tr5">
+        <td id="s9"></td>
+        <td>X</td>
+        <td id="s10"></td>
+        <td><input id="blank5" type="number" /></td>
+        <td><button id="enter5">Enter</button></td>
+      </tr>
+    </table>
+    <table>
+      <tr class="display" id="tr6">
+        <td id="s11"></td>
+        <td>X</td>
+        <td id="s12"></td>
+        <td><input id="blank6" type="number" /></td>
+        <td><button id="enter6">Enter</button></td>
+      </tr>
+
+      <tr class="display" id="tr7">
+        <td id="s13"></td>
+        <td>X</td>
+        <td id="s14"></td>
+        <td><input id="blank7" type="number" /></td>
+        <td><button id="enter7">Enter</button></td>
+      </tr>
+      <tr class="display" id="tr8">
+        <td id="s15"></td>
+        <td>X</td>
+        <td id="s16"></td>
+        <td><input id="blank8" type="number" /></td>
+        <td><button id="enter8">Enter</button></td>
+      </tr>
+      <tr class="display" id="tr9">
+        <td id="s17"></td>
+        <td>X</td>
+        <td id="s18"></td>
+        <td><input id="blank9" type="number" /></td>
+        <td><button id="enter9">Enter</button></td>
+      </tr>
+      <tr class="display" id="tr10">
+        <td id="s19"></td>
+        <td>X</td>
+        <td id="s20"></td>
+        <td><input id="blank10" type="number"/></td>
+        <td><button id="enter10">Enter</button></td>
+      </tr>
+    </table>
+    <div id="clockDisplay" class="marginLeft clear">
+      <p></p>
+        <span id="time" class="display">Time=</span
+        ><span id="seconds" class="display">00</span><span id="c"class="display">:</span><span id="tens" class="display">00</span>
+      </p>
+    </div>
+    <button id="button-reset" class="display margin clear">RESTART</button>
+    <div id="correct" class="marginLeft clear"></div>
+    <div id="message" class="marginLeft clear"></div>
+
+    <script src="multiplicationGT.js"></script>
+  </body>
+</html>

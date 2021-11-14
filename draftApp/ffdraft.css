@@ -1,0 +1,142 @@
+/*---basic---*/
+*{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body{
+    background-color: rgb(227, 227, 227);
+    color:#555;
+    font-family: "Lato",'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+    
+
+html{scroll-behavior: smooth}
+
+.row{
+    max-width: 1140px;
+    margin:0 auto 0 auto;
+}
+
+/*---DRAFT TABLE STYLINGS---*/
+
+#board-banner{
+    width: 90%;
+}
+
+table,tr,td,th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+
+h1{
+	text-align: center;
+    font-weight: 400
+}
+#trophy{
+    float: left;
+    width: 50px;
+    background-color: #e3e3e3;
+}
+#trophy2{
+    float: right;
+    width: 50px;
+    background-color: #e3e3e3;
+    
+}
+
+.teamName{
+    font-weight: 400;
+    font-size: 90%;
+}
+th {
+	text-align: center;
+    padding: 2px;
+}
+.rd{
+    width: 35px;
+    text-align: center;
+    padding: 2px;
+    font-weight: 600;
+}
+td{
+    
+    font-weight: 500;
+    font-size: 80%;
+    
+    color: #000000;
+    text-align: center;
+    padding:1px;
+    width:90px;
+    height:50px;
+        
+}
+/*---TAB SYLINGS---*/
+ul.tabs{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 400
+}
+
+ul.tabs li.current{
+    background: #ededed;
+    color: #222;
+}
+
+.tab-content{
+    display: none;
+    background: #ededed;
+    padding: 15px;
+    width: 65%
+}
+
+.tab-content.current{
+    display: inherit;
+}
+
+.tab-link:hover {
+    background-color: #a9a9a9;
+}
+
+.submitButtons{
+	margin-left: 50px;
+}
+
+/*---banner at the bottom of page with the team thats currently selecting---*/
+#banner{
+	height: 100px;
+	width: 210px;
+	background-color: #a9a9ff;
+    font-weight: 500;
+  	float: right;
+    border: black dashed 1px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*---YELLOW HIGHLIGHT NEXT PICK---*/
+
+.pick2nd{ background-color: white;
+	-webkit-animation: mymove 1.5s infinite;	animation: mymove 1.5s infinite;
+}
+
+@keyframes mymove{
+	from{background-color: yellow;}
+	to{background-color: white;}
+

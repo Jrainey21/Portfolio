@@ -1,0 +1,28 @@
+tr {
+  margin: 3%;
+}
+.float {
+  float: left;
+}
+#td1 {
+  font-size: 20px;
+}
+.display {
+  display: none;
+}
+table,
+button,
+div {
+  font-family: "Lora", serif;
+  font-size: large;
+}
+
+.marginLeft {
+  margin-left: 5%;
+}
+#button-reset {
+  margin-left: 5%;
+}
+input {
+  width: 150px;
+}

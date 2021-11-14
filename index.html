@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe Rainey Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="jqueryStandard.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" class="sticky">
+        <a
+          href="https://www.linkedin.com/in/joseph-rainey21/"
+          target="_blank"
+          class="navlinks"
+          >LinkedIn
+        </a>
+        <a class="navlinks">josephrainey21@gmail.com</a>
+        <a href="https://github.com/Jrainey21" target="_blank" class="navlinks"
+          >GitHub</a
+        >
+        <div class="dropdown">
+          <button id="btnProjects" class="jsbutton">Projects</button>
+          <div class="dropdown-content invisible" id="list">
+            <a class="dropdownlinks" href="#ffd">Fantasy Football Draft</a>
+            <a class="dropdownlinks" href="#mg">Multiplication Game</a>
+            <a class="dropdownlinks" href="#reaction">Reaction Timer</a>
+            <a class="dropdownlinks" href="#omni">Restaurant Mock</a>
+          </div>
+        </div>
+      </nav>
+      <div id="intro">
+        <h1 class="center">Joseph Rainey</h1>
+        <p id="headerP">
+          I'm a front end web developer living in Lafayette, Indiana. Check out
+          a few of my projects.
+        </p>
+      </div>
+    </header>
+    <section id="section1" class="WHITE">
+      <div id="ffd">
+        <h2 class="center">Fantasy Football Draft</h2>
+        <p>
+          <img id="ffpic" src="FantasyDraft.jpg" alt="Fantasy Draft App" />
+        </p>
+        <p>
+          A fantasy football draft application created with HTML, CSS, and
+          JavaScript.
+        </p>
+        <p class="center">
+          <a href="\draftApp\fdrafthtml.html" target="_blank"
+            ><button class="openButtons" id="draftNow">Draft Now</button></a
+          >
+        </p>
+      </div>
+      <div id="mg">
+        <h2 class="center">Multiplication Game</h2>
+        <p>
+          <img id="mgpic" src="multiGame.jpg" alt="Multiplication Game" />
+        </p>
+        <p>How fast can you multiply?</p>
+        <p class="center">
+          <a href="MultiGame/multiplicationGT.html" target="_blank"
+            ><button id="bmulti" class="openButtons">
+              Multiply Quickly
+            </button></a
+          >
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section id="section2">
+      <div id="reaction">
+        <h2 class="center">Reaction Timer</h2>
+        <p>
+          <img id="rtpic" src="reactionTester.jpg" alt="Reaction Timer" />
+        </p>
+        <p>Test your reaction speed.</p>
+        <p class="center">
+          <a href="boxbubble.html" target="_blank">
+            <button class="openButtons">How fast are you?</button></a
+          >
+        </p>
+      </div>
+      <div id="omni">
+        <h2 class="center">Restaurant Mock</h2>
+        <p>
+          <img id="omnipic" src="omnifoodPic.jpg" alt="Restaurant Picture" />
+        </p>
+        <p>
+          This mock restaurant website was created with HTML, CSS and
+          JavaScript.
+        </p>
+        <p class="center">
+          <a href="Omnifood Contents/omnifood.html" target="_blank"
+            ><button class="openButtons">Fine Dining</button>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <footer id="aboutMe">
+      <hr />
+      <div id="footcontainer">
+        <h1 id="h1Aboutme" class="center">About Me</h1>
+        <p id="aboutmep">
+          I have a background in fitness and finance and a Postbaccalaureate
+          Certificate in Programming and Software Development. I hope to grow
+          and improve my development skills with an organization that values
+          positive people. When I am not coding my next project, I am most
+          likely playing poker, enjoying a sporting event, exercising, or
+          hanging out with friends and family.
+        </p>
+        <p id="emailp">
+          <button id="emailbutton">josephrainey21@gmail.com</button>
+        </p>
+      </div>
+    </footer>
+    <script>
+      const btnProjects = document.getElementById("btnProjects");
+      const list = document.getElementById("list");
+      btnProjects.addEventListener("click", function () {
+        list.classList.toggle("block");
+      });
+      window.onclick = function (event) {
+        if (!event.target.matches(".jsbutton")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("block")) {
+              openDropdown.classList.remove("block");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
