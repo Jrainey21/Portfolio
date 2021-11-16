@@ -22,7 +22,7 @@ header {
   height: 100vh;
   background-attachment: fixed;
 }
-.sticky {
+.sticky1 {
   position: sticky;
   top: 0;
   bottom: 0;
@@ -67,11 +67,25 @@ header {
   transition: color 0.4s;
 }
 
-#navbar a,
+#navbar1 a,
 button {
   cursor: pointer;
 }
 /*--------- PROJECT DROPDOWN LINKS FROM NAVBAR-----*/
+#dropdownMenuButton {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+#dropdownMenuButton:hover {
+  color: orange;
+  transition: color 0.4s;
+  transform: translateY(2px);
+  border-bottom: 1px solid orange;
+}
+
 .dropdownlinks {
   float: none;
   text-decoration: none;
@@ -100,7 +114,7 @@ button {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.dropdown {
+.dropdown1 {
   float: left;
   overflow: hidden;
   background: none;
@@ -114,27 +128,34 @@ button {
 ---------------------------------------------------------
 */
 
-#section1,
+/* #section1,
 #section2 {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 400px;
   margin-top: 50px;
-}
+} */
 /*------------PROJECT-----SECTION DIV ID'S-------------*/
 
-#ffd,
-#mg,
-#omni,
-#reaction {
-  width: 50%;
-}
-img {
+/* img {
   height: 200px;
+
   margin: auto;
   border: 1px solid orange;
+} */
+.down {
+  margin-top: 50px;
 }
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 250px;
+  width: 500px;
+  border: 1px solid orange;
+}
+
 /*------------CLASSES AND H1-H2-DISPLAY-------------------------*/
 
 p {
@@ -145,7 +166,7 @@ p {
 .invisible {
   display: none;
 }
-.block {
+.block1 {
   display: block;
 }
 
@@ -171,6 +192,9 @@ h1 {
   font-weight: 500;
   margin-bottom: 20px;
 }
+.descriptions {
+  margin-top: 40px;
+}
 /*------------BUTTONS------------------------------------*/
 .openButtons {
   border: none;
@@ -182,7 +206,8 @@ h1 {
   border: 2px solid orange;
   border-radius: 10%;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 50px;
 }
 .openButtons:hover {
   color: white;

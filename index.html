@@ -5,99 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joe Rainey Portfolio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="portfolio.css" />
-    <script src="jqueryStandard.js"></script>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
   </head>
+
   <body>
     <header>
-      <nav id="navbar" class="sticky">
+      <nav id="navbar1" class="sticky1">
         <a
           href="https://www.linkedin.com/in/joseph-rainey21/"
           target="_blank"
           class="navlinks"
           >LinkedIn
         </a>
-        <a class="navlinks">josephrainey21@gmail.com</a>
+        <a class="navlinks" href="#">josephrainey21@gmail.com</a>
         <a href="https://github.com/Jrainey21" target="_blank" class="navlinks"
           >GitHub</a
         >
-        <div class="dropdown">
-          <button id="btnProjects" class="jsbutton">Projects</button>
-          <div class="dropdown-content invisible" id="list">
-            <a class="dropdownlinks" href="#ffd">Fantasy Football Draft</a>
-            <a class="dropdownlinks" href="#mg">Multiplication Game</a>
-            <a class="dropdownlinks" href="#reaction">Reaction Timer</a>
-            <a class="dropdownlinks" href="#omni">Restaurant Mock</a>
-          </div>
-        </div>
       </nav>
+      <div class="dropdown sticky1">
+        <button
+          class="dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false" 
+        >
+          Projects
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item dropdownlinks" href="#ffd">Fantasy Football Draft</a>
+          <a class="dropdown-item dropdownlinks" href="#mg">Multiplication Game</a>
+          <a class="dropdown-item dropdownlinks" href="#reaction">Reaction Timer</a>
+          <a class="dropdown-item dropdownlinks" href="#omni">Restaurant Mock</a>
+        </div>
+      </div>
+
+      <!--  <div class="dropdown1">
+        <button id="btnProjects" class="jsbutton">Projects</button>
+        <div class="dropdown-content invisible" id="list">
+          <a class="dropdownlinks" href="#ffd">Fantasy Football Draft</a>
+          <a class="dropdownlinks" href="#mg">Multiplication Game</a>
+          <a class="dropdownlinks" href="#reaction">Reaction Timer</a>
+          <a class="dropdownlinks" href="#omni">Restaurant Mock</a>
+        </div>
+      </div> -->
+
       <div id="intro">
         <h1 class="center">Joseph Rainey</h1>
         <p id="headerP">
-          I'm a front end web developer living in Lafayette, Indiana. Check out
+          I am a front end web developer living in Lafayette, Indiana. Check out
           a few of my projects.
         </p>
       </div>
     </header>
-    <section id="section1" class="WHITE">
-      <div id="ffd">
-        <h2 class="center">Fantasy Football Draft</h2>
-        <p>
+    <section id="section1">
+      <div class="row gx-o gy-0 center" id="ffd">
+        <div class="col-md-6 down">
+          <h2 class="center">Fantasy Football Draft</h2>
           <img id="ffpic" src="FantasyDraft.jpg" alt="Fantasy Draft App" />
-        </p>
-        <p>
-          A fantasy football draft application created with HTML, CSS, and
-          JavaScript.
-        </p>
-        <p class="center">
+          <p class="descriptions">
+            A fantasy football draft application created with HTML, CSS, and
+            JavaScript.
+          </p>
           <a href="draftApp/fdrafthtml.html" target="_blank"
             ><button class="openButtons" id="draftNow">Draft Now</button></a
           >
-        </p>
-      </div>
-      <div id="mg">
-        <h2 class="center">Multiplication Game</h2>
-        <p>
+        </div>
+        <div class="col-md-6 center down" id="mg">
+          <h2 class="center">Multiplication Game</h2>
           <img id="mgpic" src="multiGame.jpg" alt="Multiplication Game" />
-        </p>
-        <p>How fast can you multiply?</p>
-        <p class="center">
+          <p class="descriptions">
+            This multiplication timer was created with HTML, CSS, JavaScript.
+          </p>
           <a href="MultiGame/multiplicationGT.html" target="_blank"
             ><button id="bmulti" class="openButtons">
               Multiply Quickly
             </button></a
           >
-        </p>
+        </div>
       </div>
     </section>
     <hr />
     <section id="section2">
-      <div id="reaction">
-        <h2 class="center">Reaction Timer</h2>
-        <p>
+      <div class="row gx-o gy-0">
+        <div class="col-md-6 center down" id="reaction">
+          <h2 class="center">Reaction Timer</h2>
           <img id="rtpic" src="reactionTester.jpg" alt="Reaction Timer" />
-        </p>
-        <p>Test your reaction speed.</p>
-        <p class="center">
+          <p class="descriptions">
+            This reaction timer was created with HTML, CSS, and JavaScript.
+          </p>
           <a href="boxbubble.html" target="_blank">
             <button class="openButtons">How fast are you?</button></a
           >
-        </p>
-      </div>
-      <div id="omni">
-        <h2 class="center">Restaurant Mock</h2>
-        <p>
+        </div>
+        <div class="col-md-6 center down" id="omni">
+          <h2 class="center">Restaurant Mock</h2>
           <img id="omnipic" src="omnifoodPic.jpg" alt="Restaurant Picture" />
-        </p>
-        <p>
-          This mock restaurant website was created with HTML, CSS and
-          JavaScript.
-        </p>
-        <p class="center">
+          <p class="descriptions">
+            This mock restaurant landing page was created with HTML, CSS and
+            JavaScript.
+          </p>
           <a href="Omnifood Contents/omnifood.html" target="_blank"
             ><button class="openButtons">Fine Dining</button>
           </a>
-        </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section id="section3">
+      <div class="row">
+        <div class="col-md-12 center down">
+          <h2>Creative Agency</h2>
+          <img src="creative.jpg" alt="creative agency" />
+          <p class="descriptions">
+            This landing page was created with HTML, CSS, and BOOTSTRAP
+          </p>
+          <a href="sunny.html" target="_blank"
+            ><button class="openButtons">Creative Agency</button></a
+          >
+        </div>
       </div>
     </section>
 
@@ -118,24 +153,30 @@
         </p>
       </div>
     </footer>
-    <script>
-      const btnProjects = document.getElementById("btnProjects");
-      const list = document.getElementById("list");
-      btnProjects.addEventListener("click", function () {
-        list.classList.toggle("block");
-      });
-      window.onclick = function (event) {
-        if (!event.target.matches(".jsbutton")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("block")) {
-              openDropdown.classList.remove("block");
-            }
-          }
-        }
-      };
-    </script>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script> 
+
+    <!-- <script src="jqueryStandard.js"></script>
+    
   </body>
 </html>
