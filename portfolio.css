@@ -27,7 +27,7 @@ header {
   top: 0;
   bottom: 0;
   width: 100%;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 /*
@@ -36,17 +36,26 @@ header {
 
 .navlinks {
   color: white;
-  margin-right: 15px;
+
   float: left;
   font-size: 18px;
   letter-spacing: 1px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-decoration: none;
+
+  position: relative;
+  left: 40px;
+  margin-right: 20px;
+  z-index: 3;
 }
 .navlinks:hover {
   color: orange;
   transition: color 0.4s;
   transform: translateY(2px);
+  text-decoration: none;
+}
+#libtn,
+#ghbtn:hover {
+  cursor: pointer;
 }
 
 /*--------BUTTON FOR PROJECT DROPDOWN--------*/
@@ -67,10 +76,10 @@ header {
   transition: color 0.4s;
 }
 
-#navbar1 a,
+/* #navbar1 a,
 button {
   cursor: pointer;
-}
+} */
 /*--------- PROJECT DROPDOWN LINKS FROM NAVBAR-----*/
 #dropdownMenuButton {
   border: none;
@@ -78,6 +87,10 @@ button {
   color: white;
   font-size: 18px;
   font-weight: 600;
+  position: relative;
+  left: 50px;
+
+  cursor: pointer;
 }
 #dropdownMenuButton:hover {
   color: orange;
@@ -112,7 +125,7 @@ button {
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  /*  z-index: 1; */
 }
 .dropdown1 {
   float: left;
@@ -208,6 +221,7 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 5px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 .openButtons:hover {
   color: white;
