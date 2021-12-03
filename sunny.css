@@ -20,7 +20,7 @@ html {
   color: white;
 }
 header {
-  background-image: url("../contents/image-header.jpg");
+  background-image: url("contents/image-header.jpg");
   background-size: cover;
   height: 600px;
 }
