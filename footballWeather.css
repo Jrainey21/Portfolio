@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* -----------------------BUTTON STYLES */
+.selected {
+  border: solid 6px yellow;
+  box-shadow: 2px 2px 5px black inset;
+}
+
+.inline {
+  height: 40px;
+  width: 100px;
+  display: block;
+  margin-bottom: 5px;
+
+  text-align: center;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.inline:hover {
+  transition: 0.2s;
+
+  cursor: pointer;
+}
+.inline:active {
+  transform: translateY(3px);
+}
+#atl {
+  background-color: silver;
+  color: red;
+}
+#atl:hover {
+  background-color: black;
+  color: silver;
+}
+#ari {
+  background-color: red;
+  color: black;
+}
+#ari:hover {
+  background-color: red;
+  color: white;
+}
+#car {
+  background-color: rgb(0, 195, 255);
+  color: white;
+}
+#car:hover {
+  background-color: white;
+  color: rgb(0, 195, 255);
+}
+#chi {
+  background-color: navy;
+  color: orangered;
+}
+#chi:hover {
+  background-color: orangered;
+  color: navy;
+}
+#dal {
+  background-color: gray;
+  color: navy;
+}
+#dal:hover {
+  background-color: navy;
+  color: gray;
+}
+#det {
+  background-color: silver;
+  color: rgba(0, 195, 255);
+}
+#det:hover {
+  background-color: rgba(0, 195, 255);
+  color: silver;
+}
+#gre {
+  background-color: yellow;
+  color: rgb(3, 99, 3);
+}
+#gre:hover {
+  color: yellow;
+  background-color: rgb(3, 99, 3);
+}
+#lar {
+  background-color: royalblue;
+  color: gold;
+}
+#lar:hover {
+  background-color: gold;
+  color: royalblue;
+}
+#min {
+  background-color: purple;
+  color: white;
+}
+#min:hover {
+  background-color: gold;
+  color: purple;
+}
+#no {
+  background-color: rgb(151, 129, 3);
+  color: black;
+}
+#no:hover {
+  background-color: black;
+  color: rgb(151, 129, 3);
+}
+#newG {
+  background-color: rgb(55, 0, 253);
+  color: white;
+}
+#newG:hover {
+  background-color: white;
+  color: rgb(55, 0, 253);
+}
+#phi {
+  background-color: darkgreen;
+  color: white;
+}
+#phi:hover {
+  color: darkgreen;
+  background-color: white;
+}
+#sanfran {
+  background-color: red;
+  color: gold;
+}
+#sanfran:hover {
+  background-color: gold;
+  color: red;
+}
+#sea {
+  background-color: navy;
+  color: green;
+}
+#sea:hover {
+  background-color: green;
+  color: navy;
+}
+#tam {
+  color: rgb(172, 0, 0);
+  background-color: black;
+}
+#tam:hover {
+  background-color: rgb(172, 0, 0);
+  color: black;
+}
+#was {
+  background-color: rgba(167, 2, 2);
+  color: gold;
+}
+#was:hover {
+  background-color: gold;
+  color: rgba(167, 2, 2, 0.508);
+}
+#bal {
+  background-color: purple;
+  color: black;
+}
+#bal:hover {
+  background-color: black;
+  color: purple;
+}
+#buf {
+  background-color: blue;
+  color: red;
+}
+#buf:hover {
+  background-color: red;
+  color: blue;
+}
+#cin {
+  background-color: orangered;
+  color: black;
+}
+#cin:hover {
+  background-color: black;
+  color: orangered;
+}
+#cle {
+  background-color: orangered;
+  color: white;
+}
+#cle:hover {
+  background-color: white;
+  color: orangered;
+}
+#den {
+  background-color: navy;
+  color: rgb(255, 102, 0);
+}
+#den:hover {
+  background-color: orangered;
+  color: white;
+}
+#hou {
+  background-color: red;
+  color: rgb(2, 2, 79);
+}
+#hou:hover {
+  background-color: rgb(2, 2, 79);
+  color: red;
+}
+
+#ind {
+  background-color: blue;
+  color: white;
+}
+#ind:hover {
+  color: blue;
+  background-color: white;
+}
+#jac {
+  background-color: teal;
+  color: gold;
+}
+#jac:hover {
+  background-color: gold;
+  color: teal;
+}
+#kan {
+  background-color: red;
+  color: white;
+}
+#kan:hover {
+  background-color: white;
+  color: red;
+}
+#las {
+  background-color: gray;
+  color: black;
+}
+#las:hover {
+  background-color: black;
+  color: gray;
+}
+
+#lac {
+  background-color: powderblue;
+  color: white;
+}
+#lac:hover {
+  background-color: yellow;
+  color: powderblue;
+}
+#mia {
+  background-color: aqua;
+  color: orangered;
+}
+#mia:hover {
+  background-color: orangered;
+  color: aqua;
+}
+#newP {
+  color: white;
+  background-color: rgb(2, 105, 153);
+}
+#newP:hover {
+  background-color: red;
+  color: white;
+}
+#newJ {
+  background-color: green;
+  color: white;
+}
+
+#newJ:hover {
+  background-color: white;
+  color: green;
+}
+#pit {
+  background-color: gold;
+  color: black;
+}
+#pit:hover {
+  background-color: black;
+  color: gold;
+}
+#ten {
+  background-color: rgb(5, 91, 172);
+  color: white;
+}
+#ten:hover {
+  background-color: rgb(199, 2, 2);
+  color: navy;
+}
+
+/* ----------------FEATURE DIV---------------- */
+/* #feature {
+  height: 250px;
+  width: 250px;
+  background-color: gray;
+
+  margin: auto;
+  position: relative;
+  top: 50px;
+} */
+/* .row2 {
+  float: left;
+}
+#forecastDiv {
+  clear: both;
+  text-align: center;
+} */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+#stadium {
+  object-fit: cover;
+  height: 355px;
+
+  display: block;
+  position: relative;
+  right: 20px;
+}
+.imageDiv {
+  width: 1200px;
+}
+
+/* ---------------------RAIN ANIMATION */
+.cloudy {
+  background: url(stadiums/cloudy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clear {
+  background: url(stadiums/clear.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #048bdc; */
+}
+.rain {
+  background: url(stadiums/rain.jpg);
+  animation: rain 1.5s linear infinite;
+}
+.snow {
+  background: url(stadiums/snow.jpg);
+  animation: rain 3.1s linear infinite;
+}
+
+.rain:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  animation: lighting 0.9s linear infinite;
+  opacity: 0;
+}
+@keyframes rain {
+  0% {
+    background-position: top right;
+  }
+  100% {
+    background-position: bottom right;
+  }
+}
+.conditions {
+  position: relative;
+  top: 25px;
+}
+p {
+  font-size: 22px;
+  font-weight: 800;
+}
+h2 {
+  text-align: center;
+  font-weight: 800;
+}

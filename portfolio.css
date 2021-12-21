@@ -207,6 +207,8 @@ h1 {
 }
 .descriptions {
   margin-top: 40px;
+  position: relative;
+  left: 10px;
 }
 /*------------BUTTONS------------------------------------*/
 .openButtons {
@@ -248,6 +250,10 @@ h1 {
 
   transform: translateY(3px);
   transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+#bmulti {
+  position: relative;
+  top: 40px;
 }
 
 /*----------------------------------------------------------*/

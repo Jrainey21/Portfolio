@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Weather</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="footballWeather.css" />
+  </head>
+  <body id="body" class="">
+    <div class="row gx-0 gy-0">
+      <div class="col-2">
+        <button class="inline" id="bal" value="Baltimore Maryland">
+          Baltimore
+        </button>
+        <button class="inline" id="buf" value="Buffalo New york">
+          Buffalo
+        </button>
+        <button class="inline" id="cin" value="Cincinnati Ohio">
+          Cincinnati
+        </button>
+        <button class="inline" id="cle" value="Cleveland Ohio">
+          Cleveland
+        </button>
+        <button class="inline" id="den" value="Denver Colorado">Denver</button>
+        <button class="inline" id="hou" value="Houston Texas">Houston</button>
+        <button class="inline" id="ind" value="Indianapolis Indiana">
+          Indianapolis
+        </button>
+        <button class="inline" id="jac" value="Jacksonville Florida">
+          Jacksonville
+        </button>
+      </div>
+      <div class="col-2">
+        <button class="inline" id="kan" value="Kansas City Missouri">
+          Kansas City
+        </button>
+        <button class="inline" id="las" value="Las Vegas Nevada">
+          Las Vegas
+        </button>
+        <button class="inline" id="lac" value="Los Angeles California">
+          Los Angeles C
+        </button>
+        <button class="inline" id="mia" value="Miami Florida">Miami</button>
+        <button class="inline" id="newP" value=" Foxborough Massachusetts">
+          New England
+        </button>
+        <button class="inline" id="newJ" value="East Rutherford New Jersey">
+          New York J
+        </button>
+        <button class="inline" id="pit" value="Pittsburgh Pennsylvania">
+          Pittsburgh
+        </button>
+        <button class="inline" id="ten" value="Nashville Tennessee">
+          Tennessee
+        </button>
+      </div>
+
+      <div class="col-2">
+        <button class="inline" id="ari" value="Glendale Arizona">
+          Arizona
+        </button>
+        <button class="inline" id="atl" value="Atlanta Georgia">Atlanta</button>
+        <button class="inline" id="car" value="Charlotte North Carolina">
+          Carolina
+        </button>
+        <button class="inline" id="chi" value="Chicago Illinois">
+          Chicago
+        </button>
+        <button class="inline" id="dal" value="Dallas Texas">Dallas</button>
+        <button class="inline" id="det" value="Detroit Michigan">
+          Detroit
+        </button>
+        <button class="inline" id="gre" value="Green Bay Wisconsin">
+          Green Bay
+        </button>
+        <button class="inline" id="lar" value="Los Angeles California">
+          Los Angeles R
+        </button>
+      </div>
+      <div class="col-2">
+        <button class="inline" id="min" value="Minneapolis Minnesota">
+          Minnesota
+        </button>
+        <button class="inline" id="no" value="New Orleans Louisiana">
+          New Orleans
+        </button>
+        <button class="inline" id="newG" value="East Rutherford New Jersey">
+          New York G
+        </button>
+        <button class="inline" id="phi" value="Philadelphia Pennsylvania">
+          Philadelphia
+        </button>
+        <button class="inline" id="sanfran" value="San Francisco California">
+          San Francisco
+        </button>
+        <button class="inline" id="sea" value="Seattle Washington">
+          Seattle
+        </button>
+        <button class="inline" id="tam" value="Tampa Florida">Tampa Bay</button>
+        <button class="inline" id="was" value="Washington">Washington</button>
+      </div>
+      <div class="col-4">
+        <img id="stadium" src="stadiums/bal.jpg" alt="" />
+      </div>
+    </div>
+    <div class="row gx-0 gy-0">
+      <div class="col conditions">
+        <h2 id="teamWeather">Click on a team's button to see the weather!</h2>
+        <p id="conditions">Weather Condition</p>
+        <p id="wind">Wind mph:</p>
+        <p id="rain">Precipitation inches:</p>
+        <p id="temp">Current Temperature:</p>
+      </div>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="gamedayWeather.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+header {
+  background-image: url(images/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  width: 1440px;
+}
+h1 {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  left: 25%;
+  top: 25%;
+  letter-spacing: 15px;
+  font-weight: 500;
+}
+#entry {
+  width: 400px;
+  height: 40px;
+  position: relative;
+  left: 25%;
+  top: 35%;
+}
+ul {
+  position: relative;
+  top: 40%;
+  left: 25%;
+}
+.liStyle {
+  list-style: none;
+  padding: 10px;
+  width: 400px;
+  background-color: white;
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+#sortable li:hover {
+  background-color: rgb(231, 64, 45);
+  cursor: pointer;
+}
+.oneList {
+  list-style: none;
+  padding: 10px;
+  width: 400px;
+  background-color: white;
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+label {
+  margin-left: 10px;
+}
+input[type="radio"] {
+  opacity: 0.5;
+}
+button {
+  height: 30px;
+  border: none;
+
+  background-color: inherit;
+  position: relative;
+  bottom: 5px;
+  float: right;
+  margin-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: rgb(108, 189, 216);
+  color: white;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+#span1 {
+  font-size: 10px;
+  opacity: 0.5;
+}
+#spanAll {
+  color: blue;
+  position: relative;
+  left: 60px;
+}
+h6 {
+  position: relative;
+  top: 200px;
+
+  text-align: center;
+}
+.X {
+  opacity: 0.5;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.X:hover {
+  background-color: red;
+  color: white;
+  font-size: large;
+  border-color: black;
+  transition-duration: 0.2s;
+}

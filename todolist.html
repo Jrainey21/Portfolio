@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do LIST</title>
+    <link rel="stylesheet" href="todolist.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TO DO LIST</h1>
+      <input id="entry" type="text" placeholder="Create a new todo..." />
+      <ul id="sortable">
+        <!-- <li class="liStyle"><span class="X">X</span></li>
+        <li class="liStyle"><span class="X">X</span></li>
+        <li class="liStyle"><span class="X">X</span></li>
+        <li class="liStyle"><span class="X">X</span></li> -->
+        <li class="oneList">
+          <span id="span1"><span id="itemsLeft"></span> Items Left</span>
+          <!-- <span id="spanAll">All</span> -->
+          <!-- <button id="deleteAll">Delete All</button> -->
+          <!--  <button>Completed</button>
+          <button>Clear Completed</button> -->
+        </li>
+      </ul>
+    </header>
+    <!-- <h6>Drag and Drop to Reorder List</h6> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="todolist.js"></script>
+  </body>
+</html>
