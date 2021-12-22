@@ -8,7 +8,7 @@ function getWeather(e) {
   var body = document.getElementById("body");
   axios
     .get(
-      `http://api.weatherapi.com/v1/current.json?key=721019fcfcc5415594c161330211512&q=${text}`
+      `https://api.weatherapi.com/v1/current.json?key=721019fcfcc5415594c161330211512&q=${text}`
     )
 
     .then((res) => {
