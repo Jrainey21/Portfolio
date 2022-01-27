@@ -11,18 +11,38 @@ html {
   --barlow: "Barlow", sans-serif;
   --fra: "Fraunces", serif;
 }
+body {
+  clear: both;
+}
+.floatLeft {
+  float: left;
+  list-style-type: none;
+  margin-top: 2%;
+  margin-left: 2%;
+}
 
-.inline {
-  display: inline;
-}
-#navright {
+.floatRight {
   float: right;
-  color: white;
+  list-style-type: none;
+  font-family: var(--barlow);
+  font-weight: 100;
+  font-size: 1em;
+  margin-right: 7%;
+  margin-top: 2%;
 }
+
 header {
   background-image: url("contents/image-header.jpg");
   background-size: cover;
-  height: 600px;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 0;
+}
+
+.links {
+  display: inline;
+  margin-left: 10px;
 }
 #creatives {
   text-align: center;
@@ -31,29 +51,16 @@ header {
   color: white;
   font-family: var(--fra);
   font-weight: 900;
-  letter-spacing: 4px;
-  clear: right;
+  letter-spacing: 2%;
+  clear: both;
 }
 
-#navright .inline {
-  margin-left: 50px;
-  font-family: var(--barlow);
-  font-weight: 100;
-  font-size: 12px;
-  position: relative;
-  right: 20px;
-}
-#li1 {
+#sunnyside {
   font-family: var(--fra);
   color: white;
-  position: relative;
-  left: 5%;
-  font-size: 18px;
+  font-size: 1.2em;
 }
-#nav {
-  position: relative;
-  top: 15px;
-}
+
 a {
   text-decoration: none;
 }
@@ -63,9 +70,8 @@ a:visited {
 .headerbuttons {
   border: none;
   background-color: #3dbeff;
-  font-family: var(--barlow);
   color: white;
-  padding: 10px;
+  padding: 5px;
 }
 button,
 a {
@@ -76,17 +82,14 @@ a {
   background-color: white;
   border-radius: 10%;
   color: #3dbeff;
-  font-size: 12px;
 }
 
 /*----------------------------*/
 img {
   max-width: 100%;
   display: block;
-}
-.push {
-  position: relative;
-  top: 25%;
+  padding: 0%;
+  margin: 0;
 }
 
 /*--------------------BUTTON----------------*/
@@ -111,87 +114,79 @@ img {
   font-family: var(--fra);
   font-weight: 600;
 }
+.picdesc {
+  display: inline;
+  position: relative;
+  bottom: 37%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.ppadding {
+  padding: 0 10%;
+}
 #gdtext {
   font-family: var(--barlow);
-  width: 50%;
   position: relative;
-  left: 25%;
   color: hsl(167, 40%, 24%);
 }
+
 #pttext {
   font-family: var(--barlow);
-  width: 50%;
-  position: relative;
-  left: 25%;
   color: hsl(198, 62%, 26%);
 }
-#brandh2 {
-  font-family: var(--fra);
-  font-weight: 900;
-}
-#brandpara {
-  font-family: var(--barlow);
-  text-align: left;
-}
-#audienceh2 {
+
+.pheadingH2 {
   font-family: var(--fra);
   font-family: 900;
 }
-#audiencepara {
+
+.pfont {
   font-family: var(--barlow);
   text-align: left;
 }
-.justify-center {
-  width: 60%;
-  position: relative;
-  left: 20%;
-  top: 150px;
-}
 
+.transformBrand {
+  position: relative;
+  top: 25%;
+  padding: 5%;
+  margin-bottom: 10%;
+}
 .center {
   text-align: center;
 }
-.top {
-  position: relative;
-  bottom: 200px;
-}
+
 /*------------------TESTIMONIAL SECTION-------------*/
 .images {
   border-radius: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 10%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 #testimonials {
-  margin-bottom: 100px;
   font-family: var(--fra);
   color: gray;
 }
 .testp {
   font-family: var(--barlow);
-  width: 75%;
   position: relative;
-  left: 10%;
   color: #1f1f1f8e;
+  padding: 2% 8%;
 }
 .job {
   font-family: var(--barlow);
   color: #a9a9a98e;
 }
+
 /*------------------------------------------------------------*/
-.inlineblock {
-  display: inline-block;
-}
-.block {
-  display: block;
-  margin: 0%;
-}
+
 /*-----------------------------Footer---------------------*/
 #footerlist li {
-  display: inline-block;
-  margin-right: 25px;
+  display: inline;
+  /* margin-right: 10%; */
   font-family: var(--barlow);
+  padding: 3%;
 }
 #h3footer {
   margin-top: 60px;
@@ -200,12 +195,20 @@ img {
 }
 
 #footericons {
-  margin-top: 50px;
+  margin-top: 5%;
 }
+
 #footericons li {
   display: inline-block;
-  margin-right: 20px;
+  /*  margin-right: 20px; */
+  padding: 2%;
 }
 #footer {
   background-color: hsl(168, 34%, 41%);
+}
+
+@media screen and (max-width: 550px) {
+  .links {
+    display: block;
+  }
 }
