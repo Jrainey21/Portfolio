@@ -22,29 +22,24 @@ header {
   height: 100vh;
   background-attachment: fixed;
 }
-.sticky1 {
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  /* z-index: 2; */
-}
 
 /*
 -----------NAVIGATION BAR-----------------------------------------------
 */
 
+#navbar1 {
+  padding: 2%;
+  /* float: left; */
+}
+
 .navlinks {
   color: white;
 
-  float: left;
   font-size: 18px;
   letter-spacing: 1px;
   font-family: Georgia, "Times New Roman", Times, serif;
-
   position: relative;
-  left: 40px;
-  margin-right: 20px;
+  margin-right: 3%;
   z-index: 3;
 }
 .navlinks:hover {
@@ -58,39 +53,21 @@ header {
   cursor: pointer;
 }
 
-/*--------BUTTON FOR PROJECT DROPDOWN--------*/
-#btnProjects {
-  clear: right;
-  border: none;
-  font-size: 18px;
-  background: none;
-  border-radius: 2%;
-  color: white;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-#btnProjects:hover {
-  transform: translateY(2px);
-  color: orange;
-  transition: color 0.4s;
-}
-
-/* #navbar1 a,
-button {
-  cursor: pointer;
-} */
 /*--------- PROJECT DROPDOWN LINKS FROM NAVBAR-----*/
 #dropdownMenuButton {
   border: none;
   background: none;
   color: white;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
-  left: 50px;
 
+  /* padding: 2%; */
+  padding: 2% 2% 1% 2%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
   cursor: pointer;
+  position: relative;
 }
 #dropdownMenuButton:hover {
   color: orange;
@@ -116,22 +93,9 @@ button {
 #intro {
   position: relative;
   top: 30%;
-  clear: left;
+  clear: both;
 }
 
-.dropdown-content {
-  position: absolute;
-
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  /*  z-index: 1; */
-}
-.dropdown1 {
-  float: left;
-  overflow: hidden;
-  background: none;
-}
 #headerP {
   color: white;
   font-size: 20px;
@@ -139,24 +103,9 @@ button {
 
 /*
 ---------------------------------------------------------
-*/
 
-/* #section1,
-#section2 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 400px;
-  margin-top: 50px;
-} */
 /*------------PROJECT-----SECTION DIV ID'S-------------*/
 
-/* img {
-  height: 200px;
-
-  margin: auto;
-  border: 1px solid orange;
-} */
 .down {
   margin-top: 50px;
 }
@@ -164,8 +113,10 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  height: 250px;
-  width: 500px;
+  /* height: 250px; */
+  height: auto;
+  /* width: 490px; */
+  width: 94%;
   border: 1px solid orange;
 }
 
@@ -173,7 +124,7 @@ img {
 
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-align: center;
+  /*  text-align: center; */
 }
 
 .invisible {
@@ -191,9 +142,7 @@ hr {
   height: 2px;
   background-color: orange;
 }
-.white {
-  background-color: #fff;
-}
+
 h2 {
   color: orange;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -208,7 +157,7 @@ h1 {
 .descriptions {
   margin-top: 40px;
   position: relative;
-  left: 10px;
+  padding: 5%;
 }
 /*------------BUTTONS------------------------------------*/
 .openButtons {
@@ -221,8 +170,10 @@ h1 {
   border: 2px solid orange;
   border-radius: 10%;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-top: 5px;
+  margin-top: 2%;
+  /*  margin-top: 5px; */
   margin-bottom: 50px;
+  /*  margin-bottom: 10%; */
   cursor: pointer;
 }
 .openButtons:hover {
@@ -242,7 +193,7 @@ h1 {
   border: 2px solid orange;
   border-radius: 10%;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-top: 10px;
+  /*  margin-top: 5px; */
 }
 #emailbutton:hover {
   color: white;
@@ -253,7 +204,7 @@ h1 {
 }
 #bmulti {
   position: relative;
-  top: 40px;
+  top: 3%;
 }
 
 /*----------------------------------------------------------*/
@@ -269,23 +220,22 @@ footer {
     rgba(216, 108, 7, 0.9),
     rgba(0, 0, 0, 0.7)
   );
+
+  text-align: center;
 }
 #footcontainer {
   position: relative;
-  top: 15%;
-}
-#footcontainer p {
+  /* top: 10%; */
   text-align: center;
 }
-#emailp {
-  text-align: center;
-  margin-top: 20px;
-}
+
 #aboutmep {
-  width: 50%;
+  /* width: 50%; */
   position: relative;
-  left: 25%;
-  margin-top: 2%;
+  /* left: 25%; */
+  padding: 5%;
+
+  /*   margin-top: 2%; */
   line-height: 1.5em;
   letter-spacing: 1px;
   color: white;
