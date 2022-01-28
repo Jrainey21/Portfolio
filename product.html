@@ -24,7 +24,7 @@
       <a href="" class="toplinks">Women</a>
       <a href="" class="toplinks">About</a>
       <a href="" class="toplinks">Contact</a>
-      <div class="inline-block float-right">
+      <div class="float-right">
         <div id="cartPopUp" class="noShow yes">
           <h5 id="carth5">Cart <span id="x">X</span></h5>
 
@@ -39,39 +39,43 @@
       </div>
     </div>
     <hr class="clearleft" />
-    <section class="down">
+    <section>
       <div class="row">
-        <div class="col-md-6 featDiv">
+        <div class="col-md-6 featDiv mid">
           <img
-            class="left"
-            id="featured"
-            src="images/image-product-1.jpg"
+            class="featured"
+            id="mainPic"
+            src="images/image-product-1big.jpg"
             alt=""
           />
           <div class="thumbnailDiv">
             <img
-              class="left active thumbnail"
-              src="images/image-product-1-thumbnail.jpg"
+              id="images/image-product-1"
+              class="active thumbnail"
+              src="images/image-product-1.jpg"
               alt=""
             />
             <img
-              class="left thumbnail"
-              src="images/image-product-2-thumbnail.jpg"
+              id="images/image-product-2"
+              class="thumbnail"
+              src="images/image-product-2.jpg"
               alt=""
             />
             <img
-              class="left thumbnail"
-              src="images/image-product-3-thumbnail.jpg"
+              id="images/image-product-3"
+              class="thumbnail"
+              src="images/image-product-3.jpg"
               alt=""
             />
             <img
-              class="left thumbnail"
-              src="images/image-product-4-thumbnail.jpg"
+              id="images/image-product-4"
+              class="thumbnail"
+              src="images/image-product-4.jpg"
               alt=""
             />
           </div>
         </div>
-        <div class="col-md-6 productdiv margin down">
+        <div class="col-md-6 descdiv">
           <h4 class="">SNEAKER COMPANY</h4>
           <h3 id="h2title">Fall Limited Edition Sneakers</h3>
           <p>
@@ -103,6 +107,7 @@
       const items = document.getElementById("items");
       const cartSpan = document.getElementById("cartTotal");
       const addToCart = document.getElementById("buttoncart");
+      /* const featured = document.getElementById("featured"); */
       let thumbnails = document.getElementsByClassName("thumbnail");
       let activeImages = document.getElementsByClassName("active");
       const cornercart = document.getElementById("cornercart");
@@ -135,7 +140,9 @@
             activeImages[0].classList.remove("active");
           }
           this.classList.add("active");
-          document.getElementById("featured").src = this.src;
+          let loc = "images/image-product-1big.jpg";
+
+          document.getElementById("mainPic").src = this.id + "big.jpg";
         });
       }
 
@@ -175,7 +182,7 @@
         var listItem = document.createElement("li");
 
         listItem.innerHTML =
-          "<p class='listP'> <img src='images/image-product-1-thumbnail.jpg' class='thumbnailSmall float' /> Fall Limited Edition Sneakers <span>$125.00</span><span> * </span><span id='amount' class='orange'></span> </p> <p>TOTAL = <span id='total' class='orange'></span></p><button id='buy'>Buy Now!</button><button id='delete'>Delete</button>";
+          "<p class='listP'> <img src='images/image-product-1.jpg' class='thumbnailSmall float' /> Fall Limited Edition Sneakers <span>$125.00</span><span> * </span><span id='amount' class='orange'></span> </p> <p>TOTAL = <span id='total' class='orange'></span></p><button id='buy'>Buy Now!</button><button id='delete'>Delete</button>";
         cartList.appendChild(listItem);
         const total = document.getElementById("total");
         const amount = document.getElementById("amount");
