@@ -8,22 +8,16 @@
     <link rel="stylesheet" href="todolist.css" />
   </head>
   <body>
-    <header>
-      <h1>TO DO LIST</h1>
-      <input id="entry" type="text" placeholder="Create a new todo..." />
-      <ul id="sortable">
-        <!-- <li class="liStyle"><span class="X">X</span></li>
-        <li class="liStyle"><span class="X">X</span></li>
-        <li class="liStyle"><span class="X">X</span></li>
-        <li class="liStyle"><span class="X">X</span></li> -->
-        <li class="oneList">
-          <span id="span1"><span id="itemsLeft"></span> Items Left</span>
-          <!-- <span id="spanAll">All</span> -->
-          <!-- <button id="deleteAll">Delete All</button> -->
-          <!--  <button>Completed</button>
-          <button>Clear Completed</button> -->
-        </li>
-      </ul>
+    <header class="">
+      <div class="maindiv center">
+        <h1>TO DO LIST</h1>
+        <input id="entry" type="text" placeholder="Create a new todo..." />
+        <ul id="sortable" class="ulcenter">
+          <li class="oneList">
+            <span id="span1"><span id="itemsLeft"></span> Items Left</span>
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- <h6>Drag and Drop to Reorder List</h6> -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

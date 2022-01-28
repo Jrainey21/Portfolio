@@ -8,32 +8,81 @@
 
 header {
   background-image: url(images/bg-desktop-light.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 300px;
-  width: 1440px;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
 }
 h1 {
   color: white;
   text-transform: uppercase;
   position: relative;
-  left: 25%;
-  top: 25%;
+  /* left: 25%; */
+  /*  top: 25%; */
   letter-spacing: 15px;
   font-weight: 500;
+}
+.center {
+  text-align: center;
 }
 #entry {
   width: 400px;
   height: 40px;
+  display: block;
   position: relative;
-  left: 25%;
-  top: 35%;
+  left: 30%;
+  top: 50px;
+  /* position: relative;
+  display: block; */
+
+  /*  left: 25%; */
+  /*   top: 35%; */
 }
 ul {
   position: relative;
-  top: 40%;
-  left: 25%;
+  left: 30%;
+  top: 50px;
 }
+@media screen and (max-width: 720px) {
+  ul {
+    left: 20%;
+  }
+  #entry {
+    left: 20%;
+  }
+}
+@media screen and (max-width: 520px) {
+  ul {
+    left: 10%;
+  }
+  #entry {
+    left: 10%;
+  }
+}
+@media screen and (max-width: 420px) {
+  ul {
+    left: 2%;
+  }
+  #entry {
+    left: 2%;
+  }
+}
+@media screen and (max-width: 330px) {
+  ul {
+    left: 0%;
+  }
+  #entry {
+    left: 0%;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+li {
+  display: block;
+}
+
 .liStyle {
   list-style: none;
   padding: 10px;
@@ -51,6 +100,7 @@ ul {
   width: 400px;
   background-color: white;
   border-bottom: 1px solid rgb(189, 189, 189);
+  /* display: inline; */
 }
 label {
   margin-left: 10px;
