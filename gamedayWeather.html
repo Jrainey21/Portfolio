@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="footballWeather.css" />
   </head>
   <body id="body" class="">
-    <div class="row gx-0 gy-0">
+    <div class="container-fluid row gx-0 gy-0 pad">
       <div class="col-2">
         <button class="inline" id="bal" value="Baltimore Maryland">
           Baltimore
@@ -80,6 +80,7 @@
           Los Angeles R
         </button>
       </div>
+
       <div class="col-2">
         <button class="inline" id="min" value="Minneapolis Minnesota">
           Minnesota
@@ -102,19 +103,19 @@
         <button class="inline" id="tam" value="Tampa Florida">Tampa Bay</button>
         <button class="inline" id="was" value="Washington">Washington</button>
       </div>
-      <div class="col-4">
+      <div class="col-4 picdiv">
         <img id="stadium" src="stadiums/bal.jpg" alt="" />
       </div>
     </div>
-    <div class="row gx-0 gy-0">
-      <div class="col conditions">
+    <div class="row gx-0 gy-0 pad">
+      <div class="col-xl-12 conditions">
         <h2 id="teamWeather">Click on a team's button to see the weather!</h2>
-        <p id="conditions">Weather Condition</p>
-        <p id="wind">Wind mph:</p>
-        <p id="rain">Precipitation inches:</p>
-        <p id="temp">Current Temperature:</p>
+        <p class="textsize" id="conditions">Weather Condition</p>
+        <p class="textsize" id="wind">Wind mph:</p>
+        <p class="textsize" id="rain">Precipitation inches:</p>
+        <p class="textsize" id="temp">Current Temperature:</p>
       </div>
-      
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="gamedayWeather.js"></script>

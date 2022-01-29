@@ -13,9 +13,10 @@
 
 .inline {
   height: 40px;
-  width: 100px;
-  display: block;
-  margin-bottom: 5px;
+  width: 100%;
+  /* width: 100px; */
+  /* display: block; */
+  /* margin-bottom: 5px; */
 
   text-align: center;
   font-weight: 900;
@@ -308,18 +309,21 @@
   clear: both;
   text-align: center;
 } */
-
+.pad {
+  padding: 1%;
+}
 img {
   max-width: 100%;
   display: block;
 }
 #stadium {
   object-fit: cover;
-  height: 355px;
+  height: 322px;
 
-  display: block;
+  /*  display: block;
   position: relative;
-  right: 20px;
+  right: 20px; */
+  /* padding: 2%; */
 }
 .imageDiv {
   width: 1200px;
@@ -374,4 +378,22 @@ p {
 h2 {
   text-align: center;
   font-weight: 800;
+}
+@media screen and (max-width: 640px) {
+  .picdiv {
+    display: block;
+  }
+  .inline {
+    width: 150%;
+    font-size: 50%;
+    /* letter-spacing: 50%; */
+  }
+  #teamWeather {
+    font-size: 1.5em;
+    padding: 1%;
+  }
+  .textsize {
+    font-size: 1.1em;
+    padding: 1%;
+  }
 }
